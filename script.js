@@ -9,8 +9,12 @@ function addBola(){
 	//Math.random gera um numero aleatorio e o *500 é para definir um intervalor de 0,500	
 	var p1 = Math.floor(Math.random() * 500);//gera numero aleatorio para a posição p1
 	var p2 = Math.floor(Math.random() * 400);//gera numero aleatorio para a posição p2
+	var idCor = Math.floor(Math.random() * 5);
+	//criar o array das cores
+	var cores = ["green", "red", "yellow", "orange", "blue", "gray"];
+	var cor = cores[idCor];
 	//vamos inserir esses valores na nossa bola(a posição)
-	bola.setAttribute("style", "left:"+p1+"px;top:"+p2+"px;");
+	bola.setAttribute("style", "left:"+p1+"px;top:"+p2+"px; background-color:"+cor+";");
 	//criar ação de clique para estourar
 	bola.setAttribute("onclick", "estourar(this)");
 
