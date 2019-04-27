@@ -25,5 +25,5 @@ function estourar(elemento){
 	document.body.removeChild(elemento);//removendo o elemento
 }
 function start(){
-	setInterval(addBola, 1000);
+	setInterval(addBola, 500);
 }
