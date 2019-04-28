@@ -9,9 +9,9 @@ function addBola(){
 	//Math.random gera um numero aleatorio e o *500 é para definir um intervalor de 0,500	
 	var p1 = Math.floor(Math.random() * 500);//gera numero aleatorio para a posição p1
 	var p2 = Math.floor(Math.random() * 400);//gera numero aleatorio para a posição p2
-	var idCor = Math.floor(Math.random() * 5);
+	var idCor = Math.floor(Math.random() * 9);
 	//criar o array das cores
-	var cores = ["green", "red", "yellow", "orange", "blue", "gray"];
+	var cores = ["green", "red", "yellow", "orange", "blue", "gray", "white", "pink", "black"];
 	var cor = cores[idCor];
 	//vamos inserir esses valores na nossa bola(a posição)
 	bola.setAttribute("style", "left:"+p1+"px;top:"+p2+"px; background-color:"+cor+";");
