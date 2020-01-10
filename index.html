@@ -3,6 +3,7 @@
 <head>
 	<title>Jogo de Balões</title>
 	<meta charset="utf-8"/>
+	<meta id="viewport" name="viewport" content="width=device-width, user-scalable=no"/>
 	<style type="text/css">
 		.bola{
 			width: 50px;
@@ -13,9 +14,35 @@
 			border:1px solid black;
 			
 		}
+		.perdeu{
+			width: 100%;
+			height: 150px;
+			background-color: black;
+			position: absolute;
+			top: 25%;
+			left: 0px;
+			text-align: center;
+			color: white;
+			display: none;
+		}
+		#jogo{
+			width: 320px;
+			height: 380px;
+		}
 	</style>
 	<script type="text/javascript" src="script.js"></script>
 </head>
-<body onload="start()">
+<body onload="start(2500)">
+	<div> Estouradas<div value="0" id="placar">0</div></div>
+	<div> Apareceram<div value="0" id="aparecidas">0</div></div>
+	<div id="jogo">
+
+	</div>
+
+	<div class="perdeu">
+		<h1 id="frase">PERDEU, SUA PONTUAÇÃO<h1>
+			<button onclick="recomecar()">RECOMEÇAR</button>
+	</div>
+	
 </body>
 </html>
